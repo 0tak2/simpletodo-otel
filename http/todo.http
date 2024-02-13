@@ -1,0 +1,71 @@
+POST localhost:8899/todo
+Content-Type: application/json
+
+{
+  "content": "Take a rest",
+  "isComplete": false
+}
+
+###
+
+POST localhost:8899/todo
+Content-Type: application/json
+
+{
+  "content": "Work",
+  "isComplete": true
+}
+
+###
+
+GET localhost:8899/todo/1
+
+###
+
+GET localhost:8899/todo
+
+###
+
+GET localhost:8899/todo?isComplete=true
+
+###
+
+GET localhost:8899/todo?isComplete=false
+
+###
+
+PUT localhost:8899/todo/1
+Content-Type: application/json
+
+{
+  "content": "퇴근하기",
+  "isComplete": true
+}
+
+###
+
+PUT localhost:8888/todo/2
+Content-Type: application/json
+
+{
+  "content": "저녁 먹기",
+  "isComplete": false
+}
+
+###
+
+DELETE localhost:8899/todo
+
+###
+
+DELETE localhost:8899/todo?isComplete=true
+
+###
+
+DELETE localhost:8899/todo?isComplete=false
+
+###
+
+DELETE localhost:8899/todo/1
+
+###

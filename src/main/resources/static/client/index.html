@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIMPLE TODO</title>
+    <style>
+        .btn {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>simple todo</h1>
+        <div>
+            <input type="text" id="new-todo-content" placeholder="what to do"> <button id="add-btn">add</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@stomp/stompjs": "https://ga.jspm.io/npm:@stomp/stompjs@7.0.0/esm6/index.js"
+          }
+        }
+      </script>
+      <script
+        async
+        src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js"
+        crossorigin="anonymous"
+      ></script>
+    <script type="module" src="client.js"></script>
+</body>
+</html>
